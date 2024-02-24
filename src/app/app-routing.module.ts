@@ -5,7 +5,9 @@ import { ResidentsComponent } from './planet-info/childcomponents/residents/resi
 import { FilmsComponent } from './planet-info/childcomponents/films/films.component';
 
 const routes: Routes = [
+  
   { path: 'planets', component: PlanetInfoComponent },
+  { path: '', redirectTo: '/planets', pathMatch: 'full' },
   { path: 'planets/residents', component: ResidentsComponent },
   { path: 'planets/films', component: FilmsComponent },  
 ];

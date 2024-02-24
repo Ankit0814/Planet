@@ -31,3 +31,23 @@
 .text-color{
     color: #727272;
 }
+.no-data-found-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    border-radius: 5px;
+  }
+  
+  .no-data-found-container span {
+    font-weight: 600;
+    font-size: 14px;
+    margin: 10px;
+  }
+  
+  .data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }

@@ -8,6 +8,7 @@
   </div>
   
 <div class="container">
+  <ng-container *ngIf=" filmsData && filmsData.length > 0 else nodataFound">
     <div class="card mt-3" style="width: 18rem;" *ngFor="let resident of filmsData">
       <div class="card-body">
           <h5 class="card-title">{{resident?.title}}</h5>
@@ -25,4 +26,15 @@
           </div>
         </div>
     </div>
+  </ng-container>
+  <ng-template #nodataFound>
+    <div class="no-data-found-container">
+      <div class="data">
+        <img src="assets/no-data-found.svg" alt="No Data Found" />
+        <span>
+          No Data Found
+        </span>
+      </div>
+    </div>
+  </ng-template>
   </div>
