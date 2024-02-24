@@ -1,0 +1,40 @@
+<div class="header">
+  <div class="back col-1" (click)="goBack()">
+    <img src="assets/white-back-arrow.svg" class="back-link" />
+</div>
+  <div class="header-title col-11">
+    RESIDENTS DETAILS
+  </div>
+</div>
+
+<div class="container">
+  <div class="card mt-3" style="width: 18rem;" *ngFor="let resident of residentsData">
+    <div class="card-body">
+        <h5 class="card-title">{{resident?.name}}</h5>
+        <div class="row">
+          <div class="col">Birth Year</div>
+          <div class="col text-color">{{resident?.birth_year}}</div>
+          </div>
+          <div class="row mt-2">
+            <div class="col">Gender</div>
+            <div class="col text-color">{{resident?.gender}}</div>
+        </div>
+        <div class="row mt-2">
+          <div class="col ">Height</div>
+          <div class="col text-color">{{resident?.height}}</div>
+        </div>
+        <div class="row mt-2">
+          <div class="col"> Mass</div>
+          <div class="col text-color">{{resident?.mass}}</div>
+        </div>
+        <div class="row mt-2">
+            <div class="col"> Skin Color</div>
+            <div class="col text-color">{{resident?.skin_color}}</div>
+          </div>
+        <div class="row mt-2">
+            <div class="col"> Hair Color</div>
+            <div class="col text-color">{{resident?.hair_color}}</div>
+          </div>
+      </div>
+  </div>
+</div>

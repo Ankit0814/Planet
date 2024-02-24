@@ -1,0 +1,35 @@
+<div class="header">
+  <div class="back col-1">
+  </div>
+  <div class="header-title col-11">
+    PLANETS
+  </div>
+</div>
+
+<div class="container mt-5">
+<div class="card mt-3" style="width: 18rem; height: fit-content;" *ngFor="let item of planets">
+  <div class="card-body">
+    <h5 class="card-title">{{item?.name}}</h5>
+    <div class="row">
+      <div class="col">Population</div>
+      <div class="col text-color">{{item?.population}}</div>
+      </div>
+      <div class="row mt-2">
+        <div class="col">Diameter</div>
+        <div class="col text-color">{{item?.diameter}}</div>
+    </div>
+    <div class="row mt-2">
+      <div class="col ">Climate</div>
+      <div class="col text-color">{{item?.climate}}</div>
+    </div>
+    <div class="row mt-2">
+      <div class="col"> Terrain</div>
+      <div class="col text-color">{{item?.terrain}}</div>
+  </div>
+    <div class="row mt-3">
+      <div class="btn mr-4" (click)="redirectToResidence(item)">Residents Details</div>
+      <div class="btn mr-4" (click)="redirectToFilm(item)">Films Details</div>
+    </div>
+  </div>
+</div>
+</div>

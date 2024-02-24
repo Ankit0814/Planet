@@ -1,0 +1,28 @@
+<div class="header">
+    <div class="back col-1" (click)="goBack()">
+        <img src="assets/white-back-arrow.svg" class="back-link" />
+    </div>
+    <div class="header-title col-11">
+      FILMS DETAILS
+    </div>
+  </div>
+  
+<div class="container">
+    <div class="card mt-3" style="width: 18rem;" *ngFor="let resident of filmsData">
+      <div class="card-body">
+          <h5 class="card-title">{{resident?.title}}</h5>
+          <div class="row">
+            <div class="col">Director</div>
+            <div class="col text-color">{{resident?.director}}</div>
+            </div>
+            <div class="row mt-2">
+              <div class="col">Producer</div>
+              <div class="col text-color">{{resident?.producer}}</div>
+          </div>
+          <div class="row mt-2">
+            <div class="col ">Release Date</div>
+            <div class="col text-color">{{resident?.release_date}}</div>
+          </div>
+        </div>
+    </div>
+  </div>

@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    height: 60px;
+    flex-shrink: 0;
+    background: #0C2459;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.header-title {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 18px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.text-color{
+    color: #727272;
+}
+
+.btn {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: #007bff;
+    background: #007bff;
+    margin-top: 10px;
+    color: #fff;
+    
+  }
