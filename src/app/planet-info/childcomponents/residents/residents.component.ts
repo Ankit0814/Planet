@@ -17,6 +17,7 @@ export class ResidentsComponent {
     console.log("resdients url are",residentUrls);
     this.planet.getResidentsData(residentUrls).subscribe((residentData: any[]) => {
       this.residentsData = residentData;
+      console.log("length is", this.residentsData);
     },
     error => {
       console.error('Error fetching resident data:', error);
