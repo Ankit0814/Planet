@@ -19,6 +19,8 @@ getResidentData(url: string): Observable<any> {
 
 getResidentsData(urls: string[]): Observable<any[]> {
   const requests = urls.map(url => this.getResidentData(url));
+  // console.log("requests data is", requests)
+  // console.log("forkJoin data is ",forkJoin(requests));
   return forkJoin(requests);
 }
 }
